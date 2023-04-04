@@ -14,11 +14,11 @@
   <title>Mesto</title>
 </head>
 
-<body>
+<body class="body">
 
   <div class="page">
     <header class="header">
-      <img src="images/logo-white.svg" alt="Логотип" class="header__logo">
+      <img src="images/logo/logo-white.svg" alt="Логотип" class="header__logo">
       <hr class="header__line">
     </header>
 
@@ -27,10 +27,10 @@
         <img src="Images/gusto.jpg" alt="Аватар" class="profile__avatar">
         <div class="profile__info">
           <h1 class="profile__name">Жак-Ив Кусто</h1>
+          <button class="profile__edit-button profile__edit-button_popup-open">
+          </button>
           <p class="profile__about-me">Исследователь океана</p>
         </div>
-        <button class="profile__edit-button">
-        </button>
         <button class="profile__add-button">
         </button>
       </section>
@@ -48,10 +48,6 @@
           <h2 class="element__title">Домбай</h2>
         </div>
         <div class="element">
-          <img src="Images/karachaevsk.png" alt="Карачаевск" class="element__image">
-          <h2 class="element__title">Карачаевск</h2>
-        </div>
-        <div class="element">
           <img src="Images/elbrus.png" alt="Гора Эльбрус" class="element__image">
           <h2 class="element__title">Гора Эльбрус</h2>
         </div>
@@ -59,12 +55,40 @@
           <img src="Images/dombai.png" alt="Домбай" class="element__image">
           <h2 class="element__title">Домбай</h2>
         </div>
+        <div class="element">
+          <img src="Images/karachaevsk.png" alt="Карачаевск" class="element__image">
+          <h2 class="element__title">Карачаевск</h2>
+        </div>
+        <div class="element">
+          <img src="Images/karachaevsk.png" alt="Карачаевск" class="element__image">
+          <h2 class="element__title">Карачаевск</h2>
+        </div>
       </section>
     </main>
     <footer class="footer-info">
       <p class="footer">© 2023 Mesto Russia</p>
     </footer>
   </div>
+  <div class="popup">
+    <button class="popup__close-btn" type="button"></button>
+    <div class="popup__content">
+      <h2 class="popup__title">Редактировать профиль</h2>
+      <div class="field">
+        <div class="field__item">
+          <p class="field__name">Жак-Ив Кусто</p>
+          <hr class="field__line">
+        </div>
+        <div class="field__item">
+          <p class="field__about-me">Исследователь океана</p>
+          <hr class="field__line">
+        </div>
+      </div>
+      <button class="submit__button">Сохранить</button>
+    </div>
+  </div>
+
+  <script src="pages/index.js"></script>
+
 </body>
 
 </html>
