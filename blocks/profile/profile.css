@@ -1,0 +1,35 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  max-width: 282px;
+  margin: 0 auto;
+  padding-bottom: 36px;
+  text-align: center;
+}
+@media screen and (min-width: 600px) {
+    .profile {
+        display: grid;
+        grid-template-columns: 40% 1fr;
+        position: relative;
+        gap: 16px 30px;
+        max-width: 600px;
+        margin: 0;
+        padding-bottom: 36px;
+        text-align: left;
+      }
+}
+@media screen and (min-width: 1024px) {
+    .profile {
+        display: grid;
+        justify-content: space-between;
+        align-items: center;
+        grid-template-columns: 120px 1fr 150px;
+        grid-template-rows: 1fr;
+        gap: 0 30px;
+        max-width: 880px;
+        margin: 0 auto;
+        padding-bottom: 36px;
+        text-align: left;
+      }
+}

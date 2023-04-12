@@ -36,7 +36,6 @@ function closePopup(evt) {
 popup.addEventListener('click', closePopup)
 
 
-
 /* 
 const popupOpenBtn = document.querySelector('.profile__edit-button_popup-open');
 const popup = document.querySelector('.popup');

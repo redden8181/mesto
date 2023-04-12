@@ -116,7 +116,7 @@
 
 .cards {
   width: 100%;
-  max-width: 880px;
+  max-width: 450px;
   display: grid;
   justify-content: center;
   grid-template-columns: 88.125%;
@@ -249,7 +249,6 @@
 }
 
 .form__contact_name {
-  all: unset;
   line-height: 1.21;
   font-size: 14px;
   font-weight: 400;
@@ -258,7 +257,6 @@
 }
 
 .form__contact_about-me {
-  all: unset;
   line-height: 1.21;
   font-size: 14px;
   font-weight: 400;
@@ -343,8 +341,9 @@
 
   .cards {
     display: grid;
-    grid-template-columns: repeat(2, 46%);
+    grid-template-columns: repeat(2, 45%);
     width: 100%;
+    max-width: 880px;
   }
   .popup__content {
     padding: 34px 0 37px;

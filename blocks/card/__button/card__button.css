@@ -1,0 +1,10 @@
+.card__button {
+  all: unset;
+  width: 22px;
+  height: 19px;
+  cursor: pointer;
+}
+.card__button:hover {
+  transition: opacity ease-in-out 0.3s;
+  opacity: .5;
+}

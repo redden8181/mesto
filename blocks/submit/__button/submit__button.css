@@ -1,0 +1,25 @@
+.submit__button { 
+  all: unset;
+  line-height: 1.21;
+  font-size: 14px;
+  width: 84.39%;
+  max-width: 358px;
+  height: 46px;
+  margin: 0 7.8%;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+.submit__button:hover {
+  transition: opacity ease-in-out 0.3s;
+  opacity: .6;
+}
+@media screen and (min-width: 600px) {
+    .submit__button{
+        font-size: 18px;
+        line-height: 1.22;
+        margin: 0 36px;
+        height: 50px;
+      }
+}
