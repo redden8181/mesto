@@ -17,9 +17,8 @@ function openPopup() {
 openPopupBtn.addEventListener('click', openPopup);
 
 function closePopup(evt) {
-  const isOverlay = evt.target.classList.contains('popup');
   const isCloseBtn = evt.target.classList.contains('popup__close-btn')
-  if (isOverlay || isCloseBtn) {
+  if (isCloseBtn) {
     popup.classList.remove('popup_open');
   }
 }
