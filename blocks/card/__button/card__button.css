@@ -5,6 +5,8 @@
   cursor: pointer;
 }
 .card__button:hover {
+  -webkit-transition: opacity ease-in-out 0.3s;
+  -o-transition: opacity ease-in-out 0.3s;
   transition: opacity ease-in-out 0.3s;
   opacity: .5;
 }

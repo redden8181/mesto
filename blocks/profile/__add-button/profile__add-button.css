@@ -1,5 +1,5 @@
 .profile__add-button {
-  background-image: url(images/logo/addButton.svg);
+  background-image: url(../../../images/logo/addButton.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-color: #000000;
@@ -11,6 +11,8 @@
   cursor: pointer;
 }
 .profile__add-button:hover {
+  -webkit-transition: opacity ease-in-out 0.3s;
+  -o-transition: opacity ease-in-out 0.3s;
   transition: opacity ease-in-out 0.3s;
   opacity: .6;
 }
