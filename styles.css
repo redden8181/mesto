@@ -51,6 +51,7 @@
 }
 
 .profile__avatar {
+  object-fit: cover;
   width: 120px;
   height: 120px;
   margin: 0 auto;
@@ -135,7 +136,7 @@
 }
 
 .cards {
-  width: 100%;
+  /* width: 100%; */
   max-width: 450px;
   display: -ms-grid;
   display: grid;
@@ -179,11 +180,19 @@
 
 }
 .card__title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 215px;
   margin: 0;
   line-height: 1.21;
   font-size: 24px;
   font-weight: 900;
   color: #000;
+}
+
+.card__title-unset {
+  all: unset;
 }
 
 .card__button {
@@ -406,7 +415,6 @@
     display: grid;
     -ms-grid-columns: (45%)[2];
     grid-template-columns: repeat(2, 45%);
-    width: 100%;
     max-width: 880px;
   }
   .popup__content {
@@ -478,13 +486,12 @@
     .cards {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 282px);
     margin: 0;
     max-width: 880px;
   }
   .card {
-    margin: 0 auto;
+    /* margin: 0 auto; */
   }
   .footer {
     max-width: 880px;
