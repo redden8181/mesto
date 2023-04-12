@@ -36,8 +36,13 @@
 
 
 .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 26px;
   max-width: 282px;
   margin: 0 auto;
@@ -52,11 +57,20 @@
   border-radius: 50%;
 }
 .profile__info {
+  display: -ms-grid;
   display: grid;
+  -ms-grid-columns: -webkit-max-content 10px 24px;
+  -ms-grid-columns: max-content 10px 24px;
+  grid-template-columns: -webkit-max-content 24px;
   grid-template-columns: max-content 24px;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 8px 10px;
   margin: 0 auto;
   padding-left: 40px;
@@ -83,7 +97,9 @@
   background-repeat: no-repeat;
   background-color: #000000;
   border: 1px solid #FFFFFF;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   width: 18px;
   height: 18px;
   padding: 8px;
@@ -92,6 +108,8 @@
 }
 
 .profile__edit-button:hover {
+  -webkit-transition: opacity ease-in-out 0.3s;
+  -o-transition: opacity ease-in-out 0.3s;
   transition: opacity ease-in-out 0.3s;
   opacity: .6;
 }
@@ -110,6 +128,8 @@
 }
 
 .profile__add-button:hover {
+  -webkit-transition: opacity ease-in-out 0.3s;
+  -o-transition: opacity ease-in-out 0.3s;
   transition: opacity ease-in-out 0.3s;
   opacity: .6;
 }
@@ -117,28 +137,44 @@
 .cards {
   width: 100%;
   max-width: 450px;
+  display: -ms-grid;
   display: grid;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 88.125%;
   grid-template-columns: 88.125%;
   gap: 20px 17px;
   margin: 0 auto;
 }
 .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #fff;
   border-radius: 10px;
   margin: 0;
 }
 .card__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 79px;
   padding: 0 20px;
 }
 .card__image {
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px 10px 0 0;
 
 }
@@ -157,6 +193,8 @@
   cursor: pointer;
 }
 .card__button:hover {
+  -webkit-transition: opacity ease-in-out 0.3s;
+  -o-transition: opacity ease-in-out 0.3s;
   transition: opacity ease-in-out 0.3s;
   opacity: .5;
 }
@@ -196,9 +234,16 @@
 }
 
 .popup_open {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 
 }
 
@@ -215,13 +260,16 @@
 }
 
 .popup__close-btn:hover {
+  -webkit-transition: opacity ease-in-out 0.3s;
+  -o-transition: opacity ease-in-out 0.3s;
   transition: opacity ease-in-out 0.3s;
   opacity: .6;
 }
 
 .popup__content {
   position: relative;
-  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
   width: 88.125%;
   max-width: 430px;
   margin: 0 auto;
@@ -238,8 +286,13 @@
   font-weight: 900;
 }
 .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 30px;
   margin: 75px 22px 45px;
 }
@@ -285,6 +338,8 @@
 }
 
 .submit__button:hover {
+  -webkit-transition: opacity ease-in-out 0.3s;
+  -o-transition: opacity ease-in-out 0.3s;
   transition: opacity ease-in-out 0.3s;
   opacity: .6;
 }
@@ -296,7 +351,9 @@
   }
 
   .profile {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 40% 30px 1fr;
     grid-template-columns: 40% 1fr;
     position: relative;
     gap: 16px 30px;
@@ -307,19 +364,24 @@
   }
 
   .profile__info {
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     gap: 16px 18px;
     margin: 0;
     padding: 0;
   }
 
   .profile__avatar {
-    align-self: center;
+    -ms-grid-row-align: center;
+        align-self: center;
     width: 120px;
     height: 120px;
     margin: 0 auto;
     border-radius: 50%;
-    grid-row-start: 1;
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    -ms-grid-row-span: 2;
     grid-row-end: 3;
   }
   .profile__name {
@@ -340,7 +402,9 @@
   }
 
   .cards {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: (45%)[2];
     grid-template-columns: repeat(2, 45%);
     width: 100%;
     max-width: 880px;
@@ -378,10 +442,17 @@
     padding: 45px 0 41px;
   }
   .profile {
+    display: -ms-grid;
     display: grid;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-grid-columns: 120px 30px 1fr 30px 150px;
     grid-template-columns: 120px 1fr 150px;
+    -ms-grid-rows: 1fr;
     grid-template-rows: 1fr;
     gap: 0 30px;
     max-width: 880px;
@@ -389,11 +460,25 @@
     padding-bottom: 36px;
     text-align: left;
   }
+  .profile > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .profile > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .profile > *:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+  }
   .profile__info {
     margin: 0;
   }
     .cards {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 0;
     max-width: 880px;
