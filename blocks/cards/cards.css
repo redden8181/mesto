@@ -13,8 +13,6 @@
 }
 @media screen and (min-width: 600px) {
     .cards {
-        display: -ms-grid;
-        display: grid;
         -ms-grid-columns: (45%)[2];
         grid-template-columns: repeat(2, 45%);
         max-width: 880px;
@@ -22,11 +20,8 @@
 }
 @media screen and (min-width: 1024px) {
     .cards {
-        display: -ms-grid;
-        display: grid;
         -ms-grid-columns: (282px)[3];
         grid-template-columns: repeat(3, 282px);
         margin: 0;
-        max-width: 880px;
       }
 }

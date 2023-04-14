@@ -1,11 +1,11 @@
 const popup = document.querySelector('.popup');
-const openPopupBtn = document.querySelector('.profile__edit-button_open_popup');
+const openPopupBtn = document.querySelector('.profile__edit-button');
 const closePopupBtn = document.querySelector('.popup__close-btn');
 const profileName = document.querySelector('.profile__name');
 const profileAboutMe = document.querySelector('.profile__about-me');
-const profileFormName = document.querySelector('.form__contact_name');
-const profileFormAboutMe = document.querySelector('.form__contact_about-me');
-const formContact = document.querySelector('.form__contact');
+const profileFormName = document.querySelector('.popup__input_text_name');
+const profileFormAboutMe = document.querySelector('.popup__input_text_about-me');
+const formContact = document.querySelector('.popup__inputs');
 
 function openPopup() {
   profileFormName.value = profileName.textContent;
@@ -16,14 +16,11 @@ function openPopup() {
 // Вызов фукнции
 openPopupBtn.addEventListener('click', openPopup);
 
-function closePopup(evt) {
-  const isCloseBtn = evt.target.classList.contains('popup__close-btn')
-  if (isCloseBtn) {
+function closePopup() {
     popup.classList.remove('popup_open');
-  }
 }
 // Вызов функции
-popup.addEventListener('click', closePopup)
+closePopupBtn.addEventListener('click', closePopup);
 
 function handleFormSubmit(evt) {
   evt.preventDefault();

@@ -5,11 +5,11 @@
 @media screen and (min-width: 600px) {
     .header__logo {
         width: 142px;
-        padding: 45px 0 41px 27px;
+        padding: 45px 0 35px 27px;
       }
 }
 @media screen and (min-width: 1024px) {
     .header__logo {
-        padding: 45px 0 41px;
+        padding: 45px 0 35px;
       }
 }

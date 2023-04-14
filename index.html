@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Краснов Денис">
   <link rel="stylesheet" href="pages/index.css">
-  <link rel="stylesheet" href="vendor/fonts/fonts.css">
 
 
   <title>Mesto</title>
@@ -18,7 +17,6 @@
   <div class="page">
     <header class="header">
       <img src="images/logo/logo-white.svg" alt="Логотип" class="header__logo">
-      <hr class="header__line">
     </header>
 
     <main class="main">
@@ -26,54 +24,54 @@
         <img src="images/avatar.jpeg" alt="Аватар" class="profile__avatar">
         <div class="profile__info">
           <h1 class="profile__name">Адель - мАдель</h1>
-          <button class="profile__edit-button profile__edit-button_open_popup" type="button">
+          <button class="profile__edit-button" type="button">
           </button>
           <p class="profile__about-me">Днем Адель - Ночью Анабель</p>
         </div>
-        <button class="profile__add-button">
+        <button class="profile__add-button" type="button">
         </button>
       </section>
       <section class="cards">
         <div class="card">
-          <img src="images/img-1.jpeg" alt="Карачаевск" class="card__image">
+          <img src="images/img1.jpeg" alt="Карачаевск" class="card__image">
           <div class="card__description">
             <h2 class="card__title">Мой первый кожанный</h2>
-            <button class="card__button card__button_disabled"></button>
+            <button class="card__button" type="button"></button>
           </div>
         </div>
         <div class="card">
-          <img src="images/img-2.jpeg" alt="Гора Эльбрус" class="card__image">
+          <img src="images/img2.jpeg" alt="Гора Эльбрус" class="card__image">
           <div class="card__description">
             <h2 class="card__title">Сплю в обед </h2>
-            <button class="card__button card__button_disabled"></button>
+            <button class="card__button" type="button"></button>
           </div>
         </div>
         <div class="card">
-          <img src="images/img-3.jpeg" alt="Домбай" class="card__image">
+          <img src="images/img3.jpeg" alt="Домбай" class="card__image">
           <div class="card__description">
             <h2 class="card__title">На чилле</h2>
-            <button class="card__button card__button_disabled"></button>
+            <button class="card__button" type="button"></button>
           </div>
         </div>
         <div class="card">
-          <img src="images/img-4.jpeg" alt="Гора Эльбрус" class="card__image">
+          <img src="images/img4.jpeg" alt="Гора Эльбрус" class="card__image">
           <div class="card__description">
             <h2 class="card__title">Загораю</h2>
-            <button class="card__button card__button_disabled"></button>
+            <button class="card__button" type="button"></button>
           </div>
         </div>
         <div class="card">
-          <img src="images/img-5.jpeg" alt="Домбай" class="card__image">
+          <img src="images/img5.jpeg" alt="Домбай" class="card__image">
           <div class="card__description">
             <h2 class="card__title">Я - Археолог</h2>
-            <button class="card__button card__button_disabled"></button>
+            <button class="card__button" type="button"></button>
           </div>
         </div>
         <div class="card">
-          <img src="images/img-6.jpeg" alt="Карачаевск" class="card__image">
+          <img src="images/img6.jpeg" alt="Карачаевск" class="card__image">
           <div class="card__description">
             <h2 class="card__title">Перекус</h2>
-            <button class="card__button card__button_disabled"></button>
+            <button class="card__button" type="button"></button>
           </div>
         </div>
       </section>
@@ -83,18 +81,12 @@
     </footer>
   </div>
   <div class="popup">
-    <div class="popup__content">
+    <div class="popup__edit-profile">
       <h3 class="popup__title">Редактировать профиль</h3>
-      <form class="form">
-        <fieldset class="form__contact">
-          <input type="text" placeholder="Введите имя" class="form__contact form__contact_name">
-          <hr class="form__line">
-        </fieldset>
-        <fieldset class="form__contact">
-          <input type="text" placeholder="Расскажите о себе" class="form__contact form__contact_about-me">
-          <hr class="form__line">
-        </fieldset>
-        <button class="popup__cubmit-btn" type="submit">Сохранить</button>
+      <form class="popup__inputs" name="profile-submit">
+        <input type="text" placeholder="Введите имя" class="popup__input popup__input_text_name">
+        <input type="text" placeholder="Расскажите о себе" class="popup__input popup__input_text_about-me">
+        <button class="popup__submit-btn" type="submit">Сохранить</button>
       </form>
       <button class="popup__close-btn" type="button"></button>
     </div>

@@ -1,5 +1,6 @@
 .card__button {
   all: unset;
+  background-image: url(../../../images/logo/like-disabled.svg);
   width: 22px;
   height: 19px;
   cursor: pointer;
