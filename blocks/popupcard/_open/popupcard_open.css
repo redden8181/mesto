@@ -1,0 +1,7 @@
+.popuppcard_open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+}

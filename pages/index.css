@@ -22,18 +22,35 @@
 @import url(../blocks/card/__image/card__image.css);
 @import url(../blocks/card/__description/card__description.css);
 @import url(../blocks/card/__title/card__title.css);
-@import url(../blocks/card/__button/card__button.css);
+@import url(../blocks/card/__like/card__like.css);
+@import url(../blocks/card/__like/_active/card__like_active.css);
+@import url(../blocks/card/__delete/card__delete.css);
 /* Стили футера */
 @import url(../blocks/footer/footer.css);
 @import url(../blocks/footer/footer__info/footer__info.css);
+
 /* Стили попап редактирование профиля */
-@import url(../blocks/popup/popup.css);
-@import url(../blocks/popup/_open/popup_open.css);
-@import url(../blocks/popup/__edit-profile/popup__edit-profile.css);
-@import url(../blocks/popup/__title/popup__title.css);
-@import url(../blocks/popup/__inputs/popup__inputs.css);
-@import url(../blocks/popup/__input/popup__input.css);
-@import url(../blocks/popup/__input/_text/popup__input_text_name.css);
-@import url(../blocks/popup/__input/_text/popup__input_text_about-me.css);
-@import url(../blocks/popup/__submit-btn/popup__submit-btn.css);
-@import url(../blocks/popup/__close-btn/popup__close-btn.css);
+@import url(../blocks/popupprofile/popupprofile.css);
+@import url(../blocks/popupprofile/_open/popupprofile_open.css);
+@import url(../blocks/popupprofile/__container/popupprofile__container.css);
+@import url(../blocks/popupprofile/__title/popupprofile__title.css);
+@import url(../blocks/popupprofile/__inputs/popupprofile__inputs.css);
+@import url(../blocks/popupprofile/__input/popupprofile__input.css);
+@import url(../blocks/popupprofile/__input/_text/popupprofile__input_text_name.css);
+@import url(../blocks/popupprofile/__input/_text/popupprofile__input_text_link.css);
+@import url(../blocks/popupprofile/__submit-btn/popupprofile__submit-btn.css);
+@import url(../blocks/popupprofile/__close-btn/popupprofile__close-btn.css);
+
+
+@import url(../blocks/popupcard/popupcard.css);
+@import url(../blocks/popupcard/_open/popupcard_open.css);
+
+
+@import url(../blocks/popupcard/__container/popupcard__container.css);
+@import url(../blocks/popupcard/__title/popupcard__title.css);
+@import url(../blocks/popupcard/__inputs/popupcard__inputs.css);
+@import url(../blocks/popupcard/__input/popupcard__input.css);
+@import url(../blocks/popupcard/__input/_text/popupcard__input_text_name.css);
+@import url(../blocks/popupcard/__input/_text/popupcard__input_text_about-me.css);
+@import url(../blocks/popupcard/__submit-btn/popupcard__submit-btn.css);
+@import url(../blocks/popupcard/__close-btn/popupcard__close-btn.css);
