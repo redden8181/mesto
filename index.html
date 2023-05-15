@@ -32,54 +32,65 @@
         </button>
       </section>
       <section class="cards">
+        <div class="card">
+          <img src="images/img1.jpeg" alt="Карачаевск" class="card__image">
+          <div class="card__description">
+            <h2 class="card__title">Мой первый кожанный</h2>
+            <button class="card__button" type="button"></button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/img2.jpeg" alt="Гора Эльбрус" class="card__image">
+          <div class="card__description">
+            <h2 class="card__title">Сплю в обед </h2>
+            <button class="card__button" type="button"></button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/img3.jpeg" alt="Домбай" class="card__image">
+          <div class="card__description">
+            <h2 class="card__title">На чилле</h2>
+            <button class="card__button" type="button"></button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/img4.jpeg" alt="Гора Эльбрус" class="card__image">
+          <div class="card__description">
+            <h2 class="card__title">Загораю</h2>
+            <button class="card__button" type="button"></button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/img5.jpeg" alt="Домбай" class="card__image">
+          <div class="card__description">
+            <h2 class="card__title">Я - Археолог</h2>
+            <button class="card__button" type="button"></button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/img6.jpeg" alt="Карачаевск" class="card__image">
+          <div class="card__description">
+            <h2 class="card__title">Перекус</h2>
+            <button class="card__button" type="button"></button>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="footer">
       <p class="footer__info">© 2023 Mesto Russia</p>
     </footer>
   </div>
-  <div class="popup popup_type_profile-edit">
-    <div class="popup__container">
+  <div class="popup">
+    <div class="popup__edit-profile">
       <h3 class="popup__title">Редактировать профиль</h3>
-      <form class="popup__form" name="profile-edit">
-        <input type="text" placeholder="Введите имя" class="popup__input popup__profile-edit__input_text_name">
-        <input type="text" placeholder="Расскажите о себе"
-          class="popup__input popup__profile-edit__input_text_about-me">
+      <form class="popup__inputs" name="profile-submit">
+        <input type="text" placeholder="Введите имя" class="popup__input popup__input_text_name">
+        <input type="text" placeholder="Расскажите о себе" class="popup__input popup__input_text_about-me">
         <button class="popup__submit-btn" type="submit">Сохранить</button>
       </form>
       <button class="popup__close-btn" type="button"></button>
     </div>
   </div>
-  <div class="popup popup_type_card-add">
-    <div class="popup__container">
-      <h3 class="popup__title">Новое место</h3>
-      <form class="popup__form" name="card-add">
-        <input type="text" placeholder="Название" class="popup__input popup__card-add__input_text_name">
-        <input type="text" placeholder="Ссылка на картинку" class="popup__input popup__card-add__input_text_link">
-        <button class="popup__submit-btn" type="submit">Создать</button>
-      </form>
-      <button class="popup__close-btn" type="button"></button>
-    </div>
-  </div>
-  <div class="popup popup_type_image-open">
-    <div class="popup__container">
-      <figure class="popup__figure">
-        <img src="" alt="" class="card__image_open">
-        <figcaption class="card__title_open"></figcaption>
-      </figure>
-      <button class="popup__close-btn" type="button"></button>
-    </div>
-  </div>
-  <template id="card-template">
-    <div class="card">
-      <img src="" alt="" class="card__image">
-      <div class="card__description">
-        <h2 class="card__title"></h2>
-        <button class="card__like" type="button"></button>
-      </div>
-      <button class="card__delete" type="button"></button>
-    </div>
-  </template>
 
   <script src="scripts/index.js"></script>
 

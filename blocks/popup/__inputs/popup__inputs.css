@@ -1,4 +1,4 @@
-.card {
+.popup__inputs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6,7 +6,11 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #fff;
-  border-radius: 10px;
-  margin: 0;
+  gap: 30px;
+  margin: 0 22px;
+}
+@media screen and (min-width: 600px) {
+    .popup__inputs {
+        margin: 0 36px;
+      }
 }
