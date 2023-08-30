@@ -1,0 +1,22 @@
+.profile__avatar {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+@media screen and (min-width: 600px) {
+    .profile__avatar {
+        -ms-grid-row-align: center;
+            align-self: center;
+        width: 120px;
+        height: 120px;
+        margin: 0 auto;
+        border-radius: 50%;
+        -ms-grid-row: 1;
+            grid-row-start: 1;
+        -ms-grid-row-span: 2;
+        grid-row-end: 3;
+      }
+}

@@ -1,0 +1,34 @@
+.profile__info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: -webkit-max-content 10px 24px;
+  -ms-grid-columns: max-content 10px 24px;
+  grid-template-columns: -webkit-max-content 24px;
+  grid-template-columns: max-content 24px;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-rows: auto 8px auto;
+      grid-template-areas: 
+  "name edit-btn"
+  "about-me .";
+  gap: 8px 10px;
+  margin: 0 auto;
+  padding-left: 40px;
+}
+@media screen and (min-width: 600px) {
+    .profile__info {
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        gap: 16px 18px;
+        margin: 0;
+        padding: 0;
+      }
+}
+@media screen and (min-width: 1024px) {
+    .profile__info {
+        margin: 0;
+      }
+}

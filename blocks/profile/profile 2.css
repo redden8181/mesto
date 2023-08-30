@@ -1,0 +1,55 @@
+.profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 26px;
+  max-width: 282px;
+  margin: 0 auto;
+  padding-bottom: 36px;
+  text-align: center;
+}
+@media screen and (min-width: 600px) {
+    .profile {
+        display: -ms-grid;
+        display: grid;
+        -ms-grid-columns: 38% 30px 1fr;
+        grid-template-columns: 38% 1fr;
+        position: relative;
+        -ms-grid-rows: auto 16px auto;
+            grid-template-areas: 
+        "avatar profile"
+        "avatar add-btn";
+        gap: 16px 30px;
+        max-width: 600px;
+        margin: 0;
+        padding-bottom: 36px;
+        text-align: left;
+      }
+}
+@media screen and (min-width: 1024px) {
+    .profile {
+        display: -ms-grid;
+        display: grid;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -ms-grid-columns: 120px 30px 1fr 30px 150px;
+        grid-template-columns: 120px 1fr 150px;
+        -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+            grid-template-areas: 
+        "avatar profile add-btn";
+        gap: 0 30px;
+        max-width: 880px;
+        margin: 0 auto;
+        padding-bottom: 50px;
+        text-align: left;
+      }
+}

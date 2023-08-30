@@ -1,0 +1,13 @@
+.card__like {
+  all: unset;
+  background-image: url(../../../images/logo/like-disabled.svg);
+  width: 22px;
+  height: 19px;
+  cursor: pointer;
+}
+.card__like:hover {
+  -webkit-transition: opacity ease-in-out 0.3s;
+  -o-transition: opacity ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s;
+  opacity: .5;
+}

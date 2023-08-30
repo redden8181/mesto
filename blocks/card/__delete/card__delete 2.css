@@ -1,0 +1,16 @@
+.card__delete {
+  all: unset;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-image: url(../../../images/logo/delite.svg);
+  width: 18px;
+  height: 19px;
+  cursor: pointer;
+}
+.card__delete:hover {
+  -webkit-transition: opacity ease-in-out 0.3s;
+  -o-transition: opacity ease-in-out 0.3s;
+  transition: opacity ease-in-out 0.3s;
+  opacity: .6;
+}
